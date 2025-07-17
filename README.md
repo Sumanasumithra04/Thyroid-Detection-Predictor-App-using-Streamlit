@@ -1,4 +1,5 @@
-# Thyroid Detection App using Streamlit
+# Thyroid-Detection-Predictor-App-using-Streamlit
+
 
 ## Table of Contents
 
