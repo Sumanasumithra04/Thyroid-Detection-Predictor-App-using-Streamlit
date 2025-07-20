@@ -27,7 +27,7 @@ The Thyroid Detection App using Streamlit utilizes a machine learning model trai
 ## Screenshots
 
 IMAGE 1
-![Image 1](Image/Image 1 .png)
+![Image 1]([Image/Image 1.png](https://github.com/Sumanasumithra04/Thyroid-Disease-classifier/blob/5687b50f6367388eefe6aafcede2f18f1ddef0e0/Image/Image%201%20.png))
 
 IMAGE 2
 ![Image 2](Image/Image 2.png)
