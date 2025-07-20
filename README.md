@@ -59,8 +59,7 @@ It leverages a robust model trained on real-world patient records and features a
 ![Image 2](https://github.com/Sumanasumithra04/Thyroid-Disease-classifier/blob/b7a000e74974dc780058905deb68c499f1d05eee/image/image%202.png)
 
 ## Note
-
-The Thyroid Detection App using Streamlit is intended for educational and informational purposes only and should not replace professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for any medical concerns or questions.
+The Thyroid Detection App is designed for educational and informational use only. It is not a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified healthcare provider for any medical concerns.
 
 ---
 
