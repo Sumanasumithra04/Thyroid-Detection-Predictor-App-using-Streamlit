@@ -28,11 +28,6 @@ It leverages a robust model trained on real-world patient records and features a
 
 🧪 Jupyter Notebook for model training
 
-## Key Features
-
-- **Efficiency:** Instant diagnosis predictions save time and facilitate faster patient care.
-- **Accuracy:** Our machine learning model is trained on high-quality data and evaluated for accuracy and reliability.
-- **Accessibility:** Accessible via a user-friendly web interface built with Streamlit, our application can be used anytime, anywhere, with internet connectivity.
 
 ##  Folder Structure
 
