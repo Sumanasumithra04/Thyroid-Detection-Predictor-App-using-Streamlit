@@ -44,19 +44,18 @@ It leverages a robust model trained on real-world patient records and features a
 - **Accuracy:** Our machine learning model is trained on high-quality data and evaluated for accuracy and reliability.
 - **Accessibility:** Accessible via a user-friendly web interface built with Streamlit, our application can be used anytime, anywhere, with internet connectivity.
 
-## Project Structure
+##  Folder Structure
 
 ```
-.
-├── Streamlit_app.py         # Streamlit application code
-├── model.pkl                # Serialized machine learning model
-├── model_code.ipynb         # Jupyter notebook containing model training code
-├── README.md                # Project documentation
-├── requirements.txt         # List of dependencies
-├── train_data.csv           # Dataset used for training the model
-├── test_data.csv            # Dataset used for testing the model
+📁 Thyroid-Disease-classifier
+├── Streamlit_app.py         # Main Streamlit app
+├── model_code.ipynb         # Model training notebook
+├── model.pkl                # Trained model file
+├── requirements.txt         # Dependency list
+├── train_data.csv           # Training dataset
+├── test_data.csv            # Testing dataset
 └── thyroidDF.csv            # Original dataset
-```
+
 
 ## Process to Run
 
