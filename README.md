@@ -27,7 +27,8 @@ The Thyroid Detection App using Streamlit utilizes a machine learning model trai
 ## Screenshots
 
 IMAGE 1
-![Image 1](image/image 1.png)
+![Image 1](image/image%201.png)
+
 IMAGE 2
 ![Image 2](Image/Image 2.png)
 
