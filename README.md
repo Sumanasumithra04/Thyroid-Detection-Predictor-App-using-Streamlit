@@ -4,7 +4,8 @@ This project introduces a machine learning-powered web app to assist in detectin
 
 It leverages a robust model trained on real-world patient records and features an intuitive UI for ease of use by medical professionals and researchers alike.
 
-##✨ Features
+## Features
+
 ⚡ Instant prediction of thyroid conditions
 
 🤖 Machine learning model trained on real patient data
@@ -15,7 +16,8 @@ It leverages a robust model trained on real-world patient records and features a
 
 🌐 Easily deployable as a web application
 
-🛠️ Technologies Used
+## Technologies Used
+
 📘 Python
 
 🔮 Scikit-learn (ML model)
