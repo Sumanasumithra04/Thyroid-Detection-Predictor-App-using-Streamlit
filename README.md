@@ -1,4 +1,4 @@
-# Thyroid-Detection-Predictor-App-using-Streamlit
+# Thyroid-Disease-classifier
 
 
 ## Table of Contents
@@ -26,10 +26,10 @@ The Thyroid Detection App using Streamlit utilizes a machine learning model trai
 
 ## Screenshots
 
-Screenshot 1
+IMAGE 1
 ![Image 1](Images/Image_1.png)
 
-Screenshot 2
+IMAGE 2
 ![Image 2](Images/Image_2.png)
 
 ## Key Features
