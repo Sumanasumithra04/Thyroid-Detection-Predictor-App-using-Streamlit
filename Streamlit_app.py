@@ -1,9 +1,15 @@
 import streamlit as st
 import pickle
 
-# Load the trained model
-with open('model.pkl', 'rb') as f:
-    model = pickle.load(f)
+
+@st.cache_resource
+def load_model():
+    with open('model.pkl', 'rb') as f:
+        model = pickle.load(f)
+    return model
+
+# Load the model (only once)
+model = load_model()
 
 # Define diagnosis mapping dictionary
 diagnoses = {
@@ -23,7 +29,7 @@ detect_button_color = '#F63366'
 # Function to preprocess inputs before prediction
 def preprocess_inputs(age, sex, on_thyroxine, query_on_thyroxine, on_antithyroid_meds, sick, pregnant,
                       thyroid_surgery, I131_treatment, query_hypothyroid, query_hyperthyroid, lithium,
-                      goitre, tumor, hypopituitary, psych, TSH, T3, TT4, T4U, FTI):
+                      goitre, tumor, hypopituitary, psych, TSH, T3, TT4, T4U):
 
     # Replace 'Yes' with 1 and 'No' with 0
     binary_map = {'Yes': 1, 'No': 0, '': None}
@@ -47,7 +53,7 @@ def preprocess_inputs(age, sex, on_thyroxine, query_on_thyroxine, on_antithyroid
 
     return [age, sex, on_thyroxine, query_on_thyroxine, on_antithyroid_meds, sick, pregnant,
             thyroid_surgery, I131_treatment, query_hypothyroid, query_hyperthyroid, lithium,
-            goitre, tumor, hypopituitary, psych, TSH, T3, TT4, T4U, FTI]
+            goitre, tumor, hypopituitary, psych, TSH, T3, TT4, T4U]
 
 
 # Function to predict the diagnosis based on inputs
@@ -66,12 +72,8 @@ def main():
 
     # Sidebar
     st.sidebar.write("<h1 style='color: #F63366; font-size: 36px;'>Sumana Sumithra</h1>", unsafe_allow_html=True)
-
-    st.sidebar.write("GitHub profile : (https://github.com/Sumanasumithra04)")
-    st.sidebar.write("LinkedIn profile : (https://www.linkedin.com/in/sumana-sumithra-c-929b51236/)")
-
     st.sidebar.title("About Project :")
-    st.sidebar.write("This Streamlit app serves as a Thyroid Diagnosis Predictor. It utilizes machine learning to predict thyroid diagnosis based on various patient attributes such as age, sex, medical history, and laboratory test results. Users can input patient data and receive an immediate diagnosis prediction, helping medical professionals make informed decisions efficiently.")
+    st.sidebar.write("This Streamlit tool serves as a Thyroid Diagnosis Predictor. It utilizes machine learning to predict thyroid diagnosis based on various patient attributes such as age, sex, medical history, and laboratory test results. Users can input patient data and receive an immediate diagnosis prediction, helping medical professionals make informed decisions efficiently.")
 
     st.sidebar.title("Attributes Information :")
     st.sidebar.write("""
@@ -153,7 +155,7 @@ def main():
                                        pregnant,
                                        thyroid_surgery, I131_treatment, query_hypothyroid, query_hyperthyroid,
                                        lithium,
-                                       goitre, tumor, hypopituitary, psych, TSH, T3, TT4, T4U, FTI)
+                                       goitre, tumor, hypopituitary, psych, TSH, T3, TT4, T4U)
             # Get prediction
             diagnosis_num = predict_diagnosis(inputs)
             diagnosis_label = diagnoses.get(diagnosis_num, 'Unknown')
