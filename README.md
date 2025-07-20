@@ -28,16 +28,6 @@ It leverages a robust model trained on real-world patient records and features a
 
 🧪 Jupyter Notebook for model training
 
-
-
-
-
-## Images
-![Image 1](https://github.com/Sumanasumithra04/Thyroid-Disease-classifier/blob/8f1f97592babce72123e473e89f8ffe56571db5e/image/image%201%20.png)
-
-
-![Image 2](https://github.com/Sumanasumithra04/Thyroid-Disease-classifier/blob/b7a000e74974dc780058905deb68c499f1d05eee/image/image%202.png)
-
 ## Key Features
 
 - **Efficiency:** Instant diagnosis predictions save time and facilitate faster patient care.
@@ -55,50 +45,23 @@ It leverages a robust model trained on real-world patient records and features a
 ├── train_data.csv           # Training dataset
 ├── test_data.csv            # Testing dataset
 └── thyroidDF.csv            # Original dataset
+```
+
+## Input Attributes
+
+| Feature                             | Description                         |
+| ----------------------------------- | ----------------------------------- |
+| Age                                 | Patient’s age                       |
+| Sex                                 | Gender (`M` or `F`)                 |
+| TSH, T3, TT4, T4U, FTI              | Hormone levels (numeric)            |
+| On Thyroxine, Pregnant, Tumor, etc. | Yes/No flags for medical conditions |
 
 
-## Process to Run
+## APP Preview
+![Image 1](https://github.com/Sumanasumithra04/Thyroid-Disease-classifier/blob/8f1f97592babce72123e473e89f8ffe56571db5e/image/image%201%20.png)
 
-1. **Train and Pickle Model:**
-   - Open `model_code.ipynb` in Jupyter Notebook or any compatible environment.
-   - Execute the code cells to train the machine learning model using `train_data.csv`.
-   - Serialize the trained model and save it as `model.pkl`.
 
-2. **Run Streamlit Application:**
-   - Open your terminal.
-   - Navigate to the project directory.
-   - Install dependencies by running:
-     ```
-     pip install -r requirements.txt
-     ```
-   - Execute the following command to run the Streamlit application:
-     ```
-     streamlit run Streamlit_app.py
-     ```
-
-## Attributes Information
-
-- **Age:** Age of the patient (numeric)
-- **Sex:** Sex of the patient (categorical: 'M' for male, 'F' for female)
-- **On Thyroxine:** Whether the patient is on thyroxine medication (binary: 'Yes' or 'No')
-- **Query on Thyroxine:** Whether the patient is querying about thyroxine medication (binary: 'Yes' or 'No')
-- **On Antithyroid Meds:** Whether the patient is on antithyroid medication (binary: 'Yes' or 'No')
-- **Sick:** Whether the patient is sick (binary: 'Yes' or 'No')
-- **Pregnant:** Whether the patient is pregnant (binary: 'Yes' or 'No')
-- **Thyroid Surgery:** Whether the patient has undergone thyroid surgery (binary: 'Yes' or 'No')
-- **I131 Treatment:** Whether the patient is undergoing I131 treatment (binary: 'Yes' or 'No')
-- **Query Hypothyroid:** Whether the patient believes they have hypothyroidism (binary: 'Yes' or 'No')
-- **Query Hyperthyroid:** Whether the patient believes they have hyperthyroidism (binary: 'Yes' or 'No')
-- **Lithium:** Whether the patient is taking lithium medication (binary: 'Yes' or 'No')
-- **Goitre:** Whether the patient has goitre (binary: 'Yes' or 'No')
-- **Tumor:** Whether the patient has a tumor (binary: 'Yes' or 'No')
-- **Hypopituitary:** Whether the patient has hypopituitarism (binary: 'Yes' or 'No')
-- **Psych:** Whether the patient has psychiatric issues (binary: 'Yes' or 'No')
-- **TSH:** Thyroid-stimulating hormone level in blood (numeric)
-- **T3:** Triiodothyronine level in blood (numeric)
-- **TT4:** Total thyroxine level in blood (numeric)
-- **T4U:** Thyroxine utilization rate in blood (numeric)
-- **FTI:** Free thyroxine index in blood (numeric)
+![Image 2](https://github.com/Sumanasumithra04/Thyroid-Disease-classifier/blob/b7a000e74974dc780058905deb68c499f1d05eee/image/image%202.png)
 
 ## Note
 
